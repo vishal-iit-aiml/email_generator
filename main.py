@@ -1,11 +1,11 @@
 import streamlit as st
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from langchain import PromptTemplate
 from langchain.llms import OpenAI
 
-load_dotenv()
-print("Inserting my own API KEY!!!!!", os.getenv("OPENAI_API_KEY"))
+# load_dotenv()
+# print("Inserting my own API KEY!!!!!", os.getenv("OPENAI_API_KEY"))
 
 template = """
     Below is an email that may be poorly worded.
@@ -71,7 +71,7 @@ def get_api_key():
 
 openai_api_key = get_api_key()
 
-personal_api_key = os.getenv("OPENAI_API_KEY")
+# personal_api_key = os.getenv("OPENAI_API_KEY")
 
 col1, col2 = st.columns(2)
 
